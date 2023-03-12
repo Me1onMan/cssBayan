@@ -58,6 +58,7 @@ h2 {
 
 .img-container {
     display: flex;
+    justify-content: center;
     max-height: 0;
     overflow: hidden;
     transition: 1s;
@@ -65,7 +66,7 @@ h2 {
 
 .meme-img {
     margin-top: 1rem;
-    width: 100%;
+    width: 75%;
 }
 
 /*---visual-effects---*/
