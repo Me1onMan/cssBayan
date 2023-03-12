@@ -71,17 +71,9 @@ h2 {
 
 /*---visual-effects---*/
 
-.main-container:hover li label {
-    cursor: pointer;
-}
 
-.main-container:hover .cross {
-    display: block;
-}
 
-li:hover h2,
-.meme-radio:checked + label h2,
-.main-container:hover h2 {
+.meme-radio:checked + label h2 {
     color: #000;
 }
 
@@ -95,7 +87,6 @@ li.meme-container:active .cross {
     opacity: 0.7;
 }
 
-li:hover .img-container,
 .meme-radio:checked + label .meme-img {
     height: 100%;
 }
@@ -104,11 +95,6 @@ input:checked + label .img-container {
     max-height: 100vh;
 }
 
-.meme-container:hover .img-container {
-    max-height: 100vh;
-}
-
-li:hover .cross,
 .meme-radio:checked + label .cross {
     transform: rotate(45deg);
 }
@@ -166,4 +152,31 @@ li:hover .cross,
         height: 1em;
     }
 
+}
+
+@media (hover: hover) {
+    .main-container:hover li label {
+        cursor: pointer;
+    }
+    
+    .main-container:hover .cross {
+        display: block;
+    }
+
+    li:hover h2,
+    .main-container:hover h2 {
+        color: #000;
+    }
+
+    li:hover .img-container {
+        height: 100%;
+    }
+
+    .meme-container:hover .img-container {
+        max-height: 100vh;
+    }
+
+    li:hover .cross {
+        transform: rotate(45deg);
+    }
 }
